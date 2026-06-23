@@ -88,8 +88,6 @@ public ResponseEntity<List<Product>> getProductsByName(@RequestParam String keyw
 
     List<Product> products = productService.searchProducts(keyword);
 
-    System.out.println("Search keyword: " + keyword);
-
     return ResponseEntity.ok(products);
 }
 
