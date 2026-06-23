@@ -79,15 +79,18 @@ public class ProductController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-    @GetMapping("/products/search")
-    public ResponseEntity<List<Product>> getProductsByName(@RequestParam String keyword) {
-        List<Product> products = productService.searchProducts(keyword);
+   @GetMapping("/products/search")
+public ResponseEntity<List<Product>> getProductsByName(@RequestParam String keyword) {
 
-        if (keyword == null || keyword.trim().length() < 4) {
-            return ResponseEntity.badRequest().body(Collections.emptyList());
-        }
-        System.out.println("search products: " + keyword);
-        return new ResponseEntity<>(products, HttpStatus.OK);
+    if (keyword == null || keyword.trim().isEmpty()) {
+        return ResponseEntity.badRequest().body(Collections.emptyList());
     }
+
+    List<Product> products = productService.searchProducts(keyword);
+
+    System.out.println("Search keyword: " + keyword);
+
+    return ResponseEntity.ok(products);
+}
 
 }
