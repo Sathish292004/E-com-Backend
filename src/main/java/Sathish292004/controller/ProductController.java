@@ -79,7 +79,7 @@ public class ProductController {
             return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 
-   @GetMapping("/products/search")
+  @GetMapping("/products/search")
 public ResponseEntity<List<Product>> getProductsByName(@RequestParam String keyword) {
 
     if (keyword == null || keyword.trim().isEmpty()) {
