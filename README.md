@@ -103,6 +103,13 @@ GET http://localhost:8080/actuator/health
 - [ ] 📚 API documentation (e.g. springdoc-openapi / Swagger UI)
 - [ ] 🧪 Tests
 
-## 👤 Author
+## 👨‍💻 Author
 
-**Sathish Kumar** — [@Sathish292004](https://github.com/Sathish292004)
+**Sathish Kumar B**
+
+🔗 GitHub: [github.com/Sathish292004](https://github.com/Sathish292004)
+
+---
+
+⭐ If you found this useful, consider giving the repo a star!
+
