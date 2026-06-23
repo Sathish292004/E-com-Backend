@@ -1,4 +1,6 @@
 package Sathish292004.model;
+import jakarta.persistence.Basic;
+import jakarta.persistence.FetchType;
 
 
 import com.fasterxml.jackson.annotation.JsonFormat;
@@ -29,8 +31,10 @@ public class Product {
     private int stockQuantity;
     private String imageName;
     private String imageType;
+
     @Lob
-    private byte[] imageData;
+        @Basic(fetch = FetchType.LAZY)
+        private byte[] imageData;
 
     public Product(int id) {
         this.id = id;
