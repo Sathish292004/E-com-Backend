@@ -2,7 +2,7 @@
 
 REST API backend for the [SK Store](https://github.com/Sathish292004/E-com) e-commerce platform, built with Spring Boot.
 
-🔗 **Frontend:** [E-com](https://github.com/Sathish292004/E-com) · [Live demo](https://ecom-two.vercel.app)
+🔗 **Frontend:** [E-com](https://github.com/Sathish292004/E-com)  🌐[Live demo](https://ecom-two.vercel.app)
 
 ![Java](https://img.shields.io/badge/Java-21-007396?logo=openjdk&logoColor=white)
 ![Spring Boot](https://img.shields.io/badge/Spring%20Boot-4.1.0-6DB33F?logo=springboot&logoColor=white)
